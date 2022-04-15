@@ -146,14 +146,13 @@ h1::after{
 }
 /* Button style */
 .btn{
- 
-    background-color: transparent;
-    /* height: fit-content; */
-    border: var(--green-bright) 2px solid;
-    padding: 12px 16px;
+  background-color: transparent;
+    /*height: fit-content;
+    */padding: 12px 16px;
+    border: none;
+  
     margin-top: 5%;
     transition: all 0.3s;
-    /* padding: 12px 16px; */
     font-size: 16px;
     cursor: pointer;
     border-radius: 1em;
@@ -161,30 +160,73 @@ h1::after{
     -moz-border-radius: 1em;
     -ms-border-radius: 1em;
     -o-border-radius: 1em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 .btn i{
   color: var(--green-bright);
   width: 2em;
-  
-  
-  /* justify-content: center;
-  align-items: center;
-  margin-right: 5px;
-  display: flex;
-  justify-content: space-between;
-  width: 1em; */
-
-}
-.btn span {
-	/* transition: all 0.3s;
-  justify-content: center;
-  align-items: center; */
 }
 
 button a{
   text-decoration: none;
   color: #64ffda;
   font-size: 25px;
+}
+/* Button */
+.btn {
+	color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+}
+.btn span {
+	transition: all 0.3s;
+	-webkit-transition:;
+	-moz-transition:;
+	-ms-transition:;
+	-o-transition:;
+}
+.btn::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #64ffda;
+	border-bottom-color: #64ffda;
+	transform: scale(0.1, 1);
+}
+.btn:hover span {
+	letter-spacing: 2px;
+}
+.btn:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btn::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+  border: #233554 2px solid;
+}
+.btn:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
 }
 
 
@@ -216,15 +258,6 @@ button a{
 }
 
 /* Nav */
-@media (max-width: 600px) {
-  .nav {
-    /* position: unset;
-    padding-left: 20px;
-    position: absolute;
-    bottom: 0;
-    right: 0; */
-  }
-}
 
 @keyframes smoothTop {
   0% {
