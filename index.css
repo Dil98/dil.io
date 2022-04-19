@@ -19,6 +19,7 @@
     --green-bright: #64ffda;
     --green-tint: rgba(100,255,218,0.1);
     --typewriter: 2s;
+    --bright: #a5c9c0;
 
 }
 
@@ -28,6 +29,7 @@ body{
     font-family: 'Roboto', sans-serif;
 
 }
+
 .about{
   
     padding-top: 15%;
@@ -51,6 +53,7 @@ p{
     font-family: 'Roboto', sans-serif;
     width: 70%;
     color: #8892b0;
+    letter-spacing: 1px;
 
 }
 /* About me styles */
@@ -93,7 +96,7 @@ h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     position: relative;
-    font-size: 4vw;
+    font-size: 5vw;
     width: max-content;
 }
 span{
@@ -314,7 +317,7 @@ button a{
   text-align: center;
   margin-bottom: 2%;
   line-height: 1.4;
-
+  letter-spacing: 0;
 }
 .btn{
   margin-bottom: 20%;
@@ -361,6 +364,10 @@ flex-direction: row;
   max-width: 700px;
   font-size: 20px;
   margin: 0%;
+  letter-spacing: 1px;
+}
+.aboutme-description i{
+  color: var(--green-bright);
 }
 
 .aboutme-image{
@@ -394,6 +401,7 @@ flex-direction: row;
   }
 }
 /* Experience */
+
 /* Style the tab */
 .tab {
   float: left;
@@ -528,10 +536,10 @@ ul li{
   color: #f1f1f1;
   margin-bottom: 10px;
 }
-.header h3{
+/* .header h3{
   color: #64ffda;
   font-family: 'Roboto', sans-serif;
-}
+} */
 .project-info{
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
@@ -563,8 +571,10 @@ ul li{
   grid-template-columns: repeat(2,minmax(150px,10px));
   list-style: none;
 }
-#skills{
+#h3 span{
   margin-bottom: 10px;
+  font-size: 30px;
+  color: #eff3fa;
 }
 .skills ul li::before{
   content: "▹"
