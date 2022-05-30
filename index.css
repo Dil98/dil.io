@@ -563,6 +563,9 @@ ul li{
     margin: 10px;
     margin-top: 0;
   }
+  .fade-in{
+    margin-bottom: 20px;
+  }
  
 }
 /* Skills */
@@ -572,15 +575,10 @@ ul li{
   list-style: none;
 }
 #h3 span{
-  margin-bottom: 10px;
-  font-size: 30px;
-  color: #eff3fa;
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--lightest-slate);
 }
 .skills ul li::before{
   content: "▹"
-}
-@media screen and (max-width: 600px) {
-  #skills{
-    margin-top: 20px;
-  }
 }
