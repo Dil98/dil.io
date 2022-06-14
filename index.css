@@ -31,12 +31,13 @@ body{
 }
 
 .about{
-  
-    padding-top: 15%;
     padding-left: 15%;
     text-align: left;
-    min-height: 100vh;
+    min-height: 20vh;
+    padding-top: 20% !important;
+
   }
+
 
   .role{
     color: var(--green-bright);
@@ -91,8 +92,25 @@ img {
   color: var(--green-bright);
 }
 /* Skills */
+
+/* Interest */
+.interest{
+  color: var(--slate);
+  font-size: 1vw;
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  letter-spacing: 1px;
+  padding-top: 3%;
+}
+.interest h3{
+  color: red;
+  margin-top: 20px !important;
+}
 #skill{
   margin-bottom: 10px;
+}
+#skill h3{
+  color: var(--slate) !important;
 }
 /* End of about me */
 h1{
@@ -173,37 +191,11 @@ h1::after{
   padding-right: 0.9em;
   margin-top: 30px;
  }
- 
- .button .icon {
-  background: #fff;
-  height: 2em;
-  width: 2em;
-  border-radius: 2em;
-  position: absolute;
-  display: flex;
+.button a {
   align-items: center;
-  justify-content: center;
-  left: 0.4em;
-  transition: all 0.5s;
- }
- 
- .icon svg {
-  margin-left: 0em;
-  margin-top: 4px;
-  transition: all 0.5s;
-  color: #2CA0D9;
-  width: 1.2rem;
-  height: 1.2rem;
- }
- 
- .button:hover .icon svg {
-  transform: rotate(360deg);
- }
- 
- .button:hover .icon {
-  width: calc(100% - 0.85rem);
-  border-radius: 0.5em;
- }
+  list-style: none;
+  text-decoration: none;
+}
 
 /* Flex Grid */
 .flex-grid-thirds {
@@ -323,7 +315,7 @@ h1::after{
 /* About me */
 .about-me{
   padding-left: 15%;
-  padding-top: 5%;
+  padding-top: 30%;
   padding-right: 25%;
 
 }
@@ -371,9 +363,14 @@ flex-direction: row;
     font-size: 15px;
     line-height: 1.4;
   }
+  .skills{
+    
+  }
 }
 /* Experience */
-
+.experience{
+  padding-top: 15% !important;
+}
 /* Style the tab */
 .tab {
   float: left;
@@ -400,7 +397,7 @@ flex-direction: row;
   margin-bottom: 1em;
 }
 .experience h2{
-  color: var(--green-bright);
+  color: var(--slate);
 }
 ul li{
   color: var(--light-slate);
@@ -505,8 +502,8 @@ ul li{
 
 .header{
   text-align: left;
-  color: #f1f1f1;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  font-size: 40px;
 }
 
 .project-info{
@@ -545,8 +542,8 @@ ul li{
 }
 #h3 span{
   margin-top: 10px;
-  font-size: 20px;
-  color: var(--green-bright);
+  font-size: 40px;
+  color: var(--slate);
 }
 .skills ul li::before{
   content: "▹"
