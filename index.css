@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,400;1,500&family=Lekton&family=Poppins:wght@500&display=swap');
 
 *{
     padding: 0;
@@ -20,13 +20,14 @@
     --green-tint: rgba(100,255,218,0.1);
     --typewriter: 2s;
     --bright: #a5c9c0;
+    --light-slate-new: #7081b4;
 
 }
 
 
 body{
     background-color: #0a192f;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lekton', sans-serif;
 
 }
 
@@ -51,7 +52,7 @@ p{
 }
 .about-description{
     font-size: 1vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lekton', sans-serif;
     width: 70%;
     color: #8892b0;
     letter-spacing: 1px;
@@ -65,7 +66,7 @@ p{
   justify-content: center;
 }
 .about-me-description{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lekton', sans-serif;
   font-size: 1vw;
   width: 50%;
 }
@@ -93,19 +94,7 @@ img {
 }
 /* Skills */
 
-/* Interest */
-.interest{
-  color: var(--slate);
-  font-size: 1vw;
-  font-family: 'Roboto', sans-serif;
-  width: 70%;
-  letter-spacing: 1px;
-  padding-top: 3%;
-}
-.interest h3{
-  color: red;
-  margin-top: 20px !important;
-}
+
 #skill{
   margin-bottom: 10px;
 }
@@ -115,7 +104,7 @@ img {
 /* End of about me */
 h1{
     color: var(--lightest-slate);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lekton', sans-serif;
     font-weight: 600;
     position: relative;
     font-size: 5vw;
@@ -169,8 +158,39 @@ h1::after{
        blink 750ms steps(13) infinite;
     -webkit-animation: typewriter var(--typewriter) steps(13) 1s forwards,    blink 750ms steps(13) infinite;
 }
+/* Button example */
+.fill {
+  margin-top: 30px;
+
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid var(--green-bright);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: var(--light-slate-new);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
 /* BUttons style */
-.button {
+/* .button {
   cursor: pointer;
   font-family: inherit;
   background: transparent;
@@ -187,11 +207,13 @@ h1::after{
   align-items: center;
   overflow: hidden;
   height: 2.1em;
-  padding-left: 2.8em;
+  padding-left: 1em;
   padding-right: 0.9em;
   margin-top: 30px;
- }
-.button a {
+  border: 2px solid #64ffda;
+ } */
+.fill a {
+  justify-content: center;
   align-items: center;
   list-style: none;
   text-decoration: none;
@@ -222,9 +244,12 @@ h1::after{
       justify-content: center;
     align-items: center;
     }
+    /* Nav */
+.nav{
+  display: flex !important;
+}
 }
 
-/* Nav */
 
 @keyframes smoothTop {
   0% {
@@ -420,7 +445,7 @@ ul li{
 }
 @media screen and (max-width: 600px) {
   .experience{
-  margin-bottom: 10%!important;
+  margin-bottom: 40%!important;
   height: 500px;
   padding-left: 5%;
   padding-right: 5%;
@@ -473,7 +498,7 @@ ul li{
   justify-content: center;
   align-items: center;
   gap: 5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lekton', sans-serif;
 }
 .projects-links{
   
@@ -508,7 +533,7 @@ ul li{
 
 .project-info{
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lekton', sans-serif;
   color: var(--light-slate);
   margin-bottom: 10px;
 }
@@ -542,7 +567,7 @@ ul li{
 }
 #h3 span{
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 30px;
   color: var(--slate);
 }
 .skills ul li::before{
