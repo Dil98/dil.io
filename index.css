@@ -375,7 +375,7 @@ flex-direction: row;
 }
 /*About Responsive */
 @media only screen and (max-width: 600px) {
-  img{
+  #dil{
       display: none;
   }  
   .about-me{
@@ -481,6 +481,17 @@ ul li{
 }
 .social ul li{
   list-style: none;
+}
+@media screen and (max-width: 600px) {
+  .social image{
+    /* justify-content: center;
+    align-items: center; */
+    height: 35px;
+    width: 35px;
+    border: none;
+    filter: invert(100%);
+    display: flex;
+  }
 }
 /* Creation */
 .creations{
@@ -617,4 +628,8 @@ ul li{
 }
 .skills ul li::before{
   content: "▹"
+}
+.credit{
+text-align: center;
+color: var();
 }
