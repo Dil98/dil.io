@@ -11,7 +11,28 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    
+    <!-- Mobile navigation -->
+    <!-- <div class="logo">
+      <img src="images/favicon.png" alt="">
+    </div> -->
+    <div id="menu">
+      <!-- <a href="#" class="nav-logo">WebDev.</a> -->
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#my-Projects">Projects</a></li>
+        </ul>
+      </nav> 
+    </div>
+<!-- End of navigation -->
+    <div class="menu-bg" id="menu-bg"></div>
+
     <div class="about" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
        
         <h1>hi, <span>Dil</span> here.</h1>
@@ -48,6 +69,7 @@
         <img src="images/linkdln (2).png" alt=""></a></li>
     </ul>
 </div>
+<!-- Section -->
 
 
 
@@ -61,7 +83,7 @@
       <div class="aboutme-content" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
 
         <div class="aboutme-description">
-          <p>Recently graduated from <i>The University of Akron</i> with the degree in CIS - Programming.<br>
+          <p>Recently graduated from <i>The University of Akron</i> with the degree in CIS - Programming.
             my primary focus and inspiration for my studies is Web Development</p>
         </div>
           <div class="aboutme-image" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
@@ -71,7 +93,7 @@
     </div>
     <div class="skills"> 
       <div class="header"> 
-        <h3 id="h3"><span>skills</span></h3>
+        <h3 id="h3"><span>Technology</span></h3>
            </div>    
            <ul>
         <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
@@ -198,10 +220,24 @@
 </div>
 
 <footer>
+  <div class="footer">
+  <div class="social-icons">
+    <ul class="social-links">
+      <li>
+        <a href="https://github.com/Dil98" class="img-link">
+          <img src="images/github.svg" alt="">
+        </a>
+        </li>
+      <li><a href="https://www.linkedin.com/in/dil-dhital/" class="img-link">
+        <img src="images/linkdln (2).png" alt=""></a></li>
+    </ul>
+</div>
+
   <div class="credit">
-    
     <div>Built and designed by Dil Dhital</div>
     <div>All rights reserved. ©</div>
+  </div>
+</div>
 </footer>
 
  <script src="index.js"></script>

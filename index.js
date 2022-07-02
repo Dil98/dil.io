@@ -37,4 +37,9 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-// button send email
+// Navigation
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("navbar").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
