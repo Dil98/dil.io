@@ -139,6 +139,9 @@ span{
 .menu{
   display: none;
 }
+.navbar{
+  display: none;
+}
 @media screen and (max-width: 600px) {
   #menu {
     z-index: 2;
@@ -637,7 +640,9 @@ ul li{
   height: 300px;
   padding-left: 35px;
 }
-
+#project-name{
+  color: #64ffda;
+}
 @media screen and (max-width: 600px){
   .tab button.active{
     border-right: solid 2px var(--green-bright);
@@ -736,6 +741,9 @@ text-align: center;
 color: var(--light-slate);
 background-color: rgb(2, 12, 27);
 
+}
+.social{
+  margin-bottom: 90px;
 }
 .social-icons{
   display: none;
